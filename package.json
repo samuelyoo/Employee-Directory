@@ -1,0 +1,19 @@
+{
+  "name": "employee-directory",
+  "version": "1.0.0",
+  "description": "This application makes users able to view the entire employee directory at once.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samuelyoo/Employee-Directory.git"
+  },
+  "author": "Samuel Yoo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/samuelyoo/Employee-Directory/issues"
+  },
+  "homepage": "https://github.com/samuelyoo/Employee-Directory#readme"
+}
