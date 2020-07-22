@@ -6,7 +6,7 @@ function EmployeeDetails(props){
     return(
         <Row>
             <Col size="md-2">
-            <img alt={props.name} className="img-fluid" src={props.src} style={{ margin: "0 auto" }} />
+            <img alt={props.firstname} className="img-fluid" src={props.src} style={{ margin: "0 auto" }} />
             </Col>
             <Col size="md-2">
             <h5>{props.firstname}</h5>

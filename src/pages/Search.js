@@ -2,9 +2,11 @@ import React, { Component } from "react";
 import API from "../utils/Api";
 import Container from "../components/Container";
 import SearchForm from "../components/SearchForm";
-import SearchResults from "../components/SearchResults";
+// import SearchResults from "../components/SearchResults";
 import Row from "../components/Row";
 import Col from "../components/Col";
+import Card from "../components/Card";
+import EmployeeDetails from "../components/EmployeeDetails";
 
 class Search extends Component {
   state = {
@@ -25,7 +27,11 @@ class Search extends Component {
   };
 
   handleInputChange = (event) => {
-    this.setState({ search: event.target.value });
+    const value = event.target.value;
+    const name = event.target.name;
+    this.setState({
+      [name]: value,
+    });
   };
 
   handleFormSubmit = (event) => {
@@ -49,14 +55,36 @@ class Search extends Component {
               <SearchForm
                 handleFormSubmit={this.handleFormSubmit}
                 handleInputChange={this.handleInputChange}
-                breeds={this.state.breeds}
+                name={this.state.name}
               />
             </Col>
           </Row>
           <Row>
-            <Col size="md-12">
-              <SearchResults results={this.state.results} />
-            </Col>
+            {/* <Col size="md-12">
+              <Card>
+                {[this.state.result]
+                  .filter((item) => {
+                    return (
+                      item.name.first.toLowerCase().indexOf(this.state.search) >
+                      -1
+                    );
+                  })
+                  .map((res, index) => (
+                    <div>
+                      {" "}
+                      <EmployeeDetails
+                        key={index}
+                        firstname={res.name.first}
+                        lastname={res.name.last}
+                        src={res.picture.thumbnail}
+                        director={res.email}
+                        phone={res.phone}
+                      />{" "}
+                      <hr />
+                    </div>
+                  ))}
+              </Card>
+            </Col> */}
           </Row>
         </Container>
       </div>
