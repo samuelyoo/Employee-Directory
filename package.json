@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/samuelyoo/Employee-Directory/issues"
   },
-  "homepage": "https://github.com/samuelyoo/Employee-Directory#readme"
+  "homepage": "https://github.com/samuelyoo/Employee-Directory#readme",
+  "dependencies": {
+    "react-router-dom": "^5.2.0"
+  }
 }

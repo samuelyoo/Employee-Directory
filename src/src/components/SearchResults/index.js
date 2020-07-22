@@ -1,13 +1,15 @@
 import React from "react";
 import EmployeeDetails from "../EmployeeDetails";
+import Row from "../Row"
+import Col from "../Col"
+import Card from "../Card"
 import "./style.css";
 
 function SearchResults(props) {
   return (
     <Row>
       <Col size="md-12">
-        <Card heading={"Employees List"}>
-          {/* to sort the table */}
+        <Card>
           {[...this.state.result]
             .filter((item) => {
               return (
@@ -17,7 +19,7 @@ function SearchResults(props) {
             .map((res, index) => (
               <div>
                 {" "}
-                <EmpDetail
+                <EmployeeDetails
                   key={index}
                   firstname= {res.name.first}
                   lastname= {res.name.last}
