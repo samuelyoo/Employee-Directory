@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/samuelyoo/Employee-Directory#readme",
   "dependencies": {
-    "react-router-dom": "^5.2.0"
+    "react-router-dom": "^6.26.2"
   }
 }
